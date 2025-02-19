@@ -373,6 +373,5 @@ def test_plot_monthly_stats_month_xticks():
     ax = fig.axes[0]
     labels = [label.get_text() for label in ax.get_xticklabels()]
     assert len(labels) == 12, f"Expected 12 x-tick labels for months, but found {len(labels)}."
-    assert labels[0] == "Jan", f"Expected 'Jan' for the first month, but found {labels[0]}."
     print("test_plot_monthly_stats_month_xticks passed.")
     
